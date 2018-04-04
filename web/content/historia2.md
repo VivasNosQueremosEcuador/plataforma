@@ -1,7 +1,7 @@
 Title: Historia 2
 Date: 2018-02-26 19:10
 Modified: 2018-02-26 19:12
-Category: Historias
+Category: Las que ya no están
 Tags: quito, historia
 Slug: historia-2
 Authors: Fernanda Sánchez
