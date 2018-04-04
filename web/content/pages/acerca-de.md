@@ -1,4 +1,4 @@
-Title: Acerca de
+Title: Vivas Nos Queremos
 Tags: quito, vivas, acerca-de
 Slug: acerca-de
 
