@@ -26,6 +26,38 @@
     </div>
 </div>
 
+{% block content_title %}
+<h2>All articles</h2>
+{% endblock %}
+
+<ol id="post-list">
+  {% for article in articles_page.object_list %}
+  <li><article class="hentry">
+      <header>
+        <h2 class="entry-title">
+          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+            {{ article.title }}
+          </a>
+        </h2>
+      </header>
+      <footer class="post-info">
+        <time class="published" datetime="{{ article.date.isoformat() }}">
+          {{ article.locale_date }}
+        </time>
+        <address class="vcard author">
+          By
+          {% for author in article.authors %}
+          <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+          {% endfor %}
+        </address>
+      </footer>
+      <div class="entry-content"> {{ article.summary }} </div>
+    </article></li>
+    {% endfor %}
+</ol>
+{% if articles_page.has_other_pages() %}
+{% include 'pagination.html' %}
+{% endif %}
 </section>
 <section id="noticias">
   <div class="uk-section">
@@ -49,6 +81,11 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
       </div>
+      <div class="uk-flex uk-flex-center uk-width-1-1">
+        <a class="uk-button uk-button-primary uk-width-1-2 uk-margin uk-button-large" href="../category/noticias.html">
+          Ver más noticias
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -56,11 +93,19 @@
   <div class="uk-section">
     <h3> ¡Participa! </h3>
     <span>Existen varias formas de participar</span>
+    <div class="uk-flex uk-flex-center uk-width-1-1">
+      <a class="uk-button uk-button-primary uk-width-1-2 uk-margin uk-button-large" href="../pages/participa.html">
+        Más información</a>
+    </div>
   </div>
 </section>
 <section id="eventos">
   <div class="uk-section">
     <h3> Eventos </h3>
+    <div class="uk-flex uk-flex-center uk-width-1-1">
+      <a class="uk-button uk-button-primary uk-width-1-2 uk-margin uk-button-large" href="../category/eventos.html">
+      Ver todos los eventos</a>
+    </div>
   </div>
 </section>
 <section id="redes-sociales">
