@@ -3,3 +3,11 @@ h3 {
     color: #c52d4e;
 }
 
+.uk-navbar-container {
+    height: 140px;
+}
+
+.uk-logo > img {
+    margin: auto;
+    max-width: 185px;
+}
