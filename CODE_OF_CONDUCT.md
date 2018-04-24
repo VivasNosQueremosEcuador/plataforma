@@ -28,17 +28,28 @@ Ejemplos de comportamiento inaceptable por participantes:
 * _Manterrupting_ - cuando hombres interrumpen sistémicamente a las mujeres
 
 ## Nuestras responsabilidades
-Quienes administramos el proyecto somos responsables de clarificar los estándares de comportamiento aceptable y se espera que tomen medidas correctivas y apropiadas en respuesta a situaciones de conducta inaceptable.
-Quienes administramos el proyecto  tenemos el derecho y la responsabilidad de eliminar, editar o rechazar comentarios, _commits_, código, ediciones de documentación, _issues_, y otras contribuciones que no estén alineadas con este Código de Conducta, o de prohibir temporal o permanentemente a cualquier colaborador o colaboradora cuyo comportamiento sea inapropiado, amenazante, ofensivo o perjudicial.
+Quienes administramos el proyecto somos responsables de clarificar los estándares de comportamiento aceptable
+y se espera que tomen medidas correctivas y apropiadas en respuesta a situaciones de conducta inaceptable.
+Quienes administramos el proyecto  tenemos el derecho y la responsabilidad de eliminar, editar o rechazar
+comentarios, _commits_, código, ediciones de documentación, _issues_, y otras contribuciones que no estén
+alineadas con este Código de Conducta, o de prohibir temporal o permanentemente a cualquier colaborador o
+colaboradora cuyo comportamiento sea inapropiado, amenazante, ofensivo o perjudicial.
 
 ## Alcance
-Este código de conducta aplica tanto a espacios del proyecto como a espacios públicos donde un individuo esté en representación del proyecto o comunidad. Ejemplos de esto incluye el uso de la cuenta oficial de correo electrónico, publicaciones a través de las redes sociales oficiales, o presentaciones con personas designadas en eventos online u offline. La representación del proyecto puede ser clarificada explícitamente por las y los administradores del proyecto.
+Este código de conducta aplica tanto a espacios del proyecto como a espacios públicos donde un individuo
+esté en representación del proyecto o comunidad. Ejemplos de esto incluye el uso de la cuenta oficial de
+correo electrónico, publicaciones a través de las redes sociales oficiales, o presentaciones con personas
+designadas en eventos online u offline. La representación del proyecto puede ser clarificada explícitamente por las y los administradores del proyecto.
 
 ## Aplicación
-Ejemplos de abuso, discriminación, acoso u otro tipo de comportamiento inaceptable puede ser reportado al equipo del proyecto en [INSERTE CORREO AQUÍ]. Todas las quejas serán revisadas e investigadas, generando un resultado apropiado a las circunstancias. El equipo del proyecto está obligado a mantener confidencialidad de la persona que reportó el incidente. Detalles específicos acerca de las políticas de aplicación pueden ser publicadas por separado.
+Ejemplos de abuso, discriminación, acoso u otro tipo de comportamiento inaceptable puede ser reportado al
+equipo del proyecto en [INSERTE CORREO AQUÍ]. Todas las quejas serán revisadas e investigadas, generando
+un resultado apropiado a las circunstancias. El equipo del proyecto está obligado a mantener confidencialidad
+de la persona que reportó el incidente. Detalles específicos acerca de las políticas de aplicación pueden ser publicadas por separado.
 Administradores y administradoras que no sigan o que no hagan cumplir este Código de Conducta pueden ser eliminados y eliminadas de forma temporal o permanente del equipo administrador.
 
 ## Atribución
-Este Código de Conducta es una adaptación del [Contributor Covenant](https://www.contributor-covenant.org/), versión 1.4, disponible en [https://www.contributor-covenant.org/es/version/1/4/code-of-conduct.html](https://www.contributor-covenant.org/es/version/1/4/code-of-conduct)
+Este Código de Conducta es una adaptación del [Contributor Covenant](https://www.contributor-covenant.org/),
+versión 1.4, disponible en [https://www.contributor-covenant.org/es/version/1/4/code-of-conduct.html](https://www.contributor-covenant.org/es/version/1/4/code-of-conduct)
 
 
