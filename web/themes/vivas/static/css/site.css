@@ -30,6 +30,10 @@ h3 {
     text-align: center;
 }
 
+.uk-card span {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 .uk-background-cover > h3 {
     text-align: center;
 }
