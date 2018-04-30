@@ -24,3 +24,11 @@ h3 {
     font-family: 'Candal', sans-serif;
     text-align: center;
 }
+
+.uk-background-cover > h3 {
+    text-align: center;
+}
+
+.uk-background-cover > h4 {
+    text-align: center;
+}
