@@ -11,3 +11,16 @@ h3 {
     margin: auto;
     max-width: 185px;
 }
+
+.uk-card > h3 {
+    color: #c52d4e;
+    font-family: 'Candal', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.uk-card > h4 {
+    font-family: 'Candal', sans-serif;
+    text-align: center;
+}
