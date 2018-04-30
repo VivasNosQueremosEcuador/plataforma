@@ -25,6 +25,11 @@ h3 {
     text-align: center;
 }
 
+.uk-card > h5 {
+    font-family: 'Candal', sans-serif;
+    text-align: center;
+}
+
 .uk-background-cover > h3 {
     text-align: center;
 }
