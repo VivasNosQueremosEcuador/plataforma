@@ -1,43 +1,67 @@
 h3 {
-    font-family: 'Candal', sans-serif;
-    color: #c52d4e;
+  font-family: 'Candal', sans-serif;
+  color: #c52d4e;
 }
 
 .uk-navbar-container {
-    height: 140px;
+  height: 140px;
 }
 
 .uk-logo > img {
-    margin: auto;
-    max-width: 185px;
+  margin: auto;
+  max-width: 185px;
 }
 
 .uk-card > h3 {
-    color: #c52d4e;
-    font-family: 'Candal', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.4;
-    text-align: center;
+  color: #c52d4e;
+  font-family: 'Candal', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-align: center;
 }
 
 .uk-card > h4 {
-    font-family: 'Candal', sans-serif;
-    text-align: center;
+  font-family: 'Candal', sans-serif;
+  text-align: center;
 }
 
 .uk-card > h5 {
-    font-family: 'Candal', sans-serif;
-    text-align: center;
+  font-family: 'Candal', sans-serif;
+  text-align: center;
 }
 
 .uk-card span {
-    font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .uk-background-cover > h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .uk-background-cover > h4 {
-    text-align: center;
+  text-align: center;
+}
+
+.custom-button {
+  border: 4px solid;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25rem;
+  text-transform: none;
+}
+
+@media only screen and (max-width: 640px){
+  .custom-button {
+    width: 100%;
+  }
+}
+
+.red-button {
+  border-color: #c52d4e;
+  color: #c52d4e;
+}
+
+.white-button {
+  background: transparent;
+  border-color: #f8f8f8;
+  color: #f8f8f8;
 }
