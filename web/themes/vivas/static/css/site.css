@@ -75,3 +75,7 @@ h3 {
   color: #f8f8f8;
 }
 
+.uk-iconnav > * > * {
+  color: #c52d4e;
+}
+
