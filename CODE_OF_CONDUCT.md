@@ -43,7 +43,7 @@ designadas en eventos online u offline. La representación del proyecto puede se
 
 ## Aplicación
 Ejemplos de abuso, discriminación, acoso u otro tipo de comportamiento inaceptable puede ser reportado al
-equipo del proyecto en [INSERTE CORREO AQUÍ]. Todas las quejas serán revisadas e investigadas, generando
+equipo del proyecto en **vivasnosqueremos.comunicacion@gmail.com**. Todas las quejas serán revisadas e investigadas, generando
 un resultado apropiado a las circunstancias. El equipo del proyecto está obligado a mantener confidencialidad
 de la persona que reportó el incidente. Detalles específicos acerca de las políticas de aplicación pueden ser publicadas por separado.
 Administradores y administradoras que no sigan o que no hagan cumplir este Código de Conducta pueden ser eliminados y eliminadas de forma temporal o permanente del equipo administrador.
@@ -51,5 +51,4 @@ Administradores y administradoras que no sigan o que no hagan cumplir este Códi
 ## Atribución
 Este Código de Conducta es una adaptación del [Contributor Covenant](https://www.contributor-covenant.org/),
 versión 1.4, disponible en [https://www.contributor-covenant.org/es/version/1/4/code-of-conduct.html](https://www.contributor-covenant.org/es/version/1/4/code-of-conduct)
-
 
