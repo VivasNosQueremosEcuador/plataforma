@@ -15,7 +15,7 @@
 
 
 h3 {
-  font-family: 'Candal', sans-serif;
+  font-family: 'Nanami-Bold', 'Candal', sans-serif;
   color: #c52d4e;
 }
 
@@ -37,7 +37,7 @@ h3 {
 }
 
 .uk-card > h4 {
-  font-family: 'Candal', sans-serif;
+  font-family: 'Nanami-Light', 'Candal', sans-serif;
   text-align: center;
 }
 
