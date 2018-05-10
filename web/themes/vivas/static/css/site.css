@@ -1,3 +1,19 @@
+@font-face {
+  font-family: Nanami;
+  src: url(../fonts/nanami/Nanami-Regular.otf);
+}
+
+@font-face {
+  font-family: Nanami-Light;
+  src: url(../fonts/nanami/Nanami-Light.otf);
+}
+
+@font-face {
+  font-family: Nanami-Bold;
+  src: url(../fonts/nanami/Nanami-Bold.otf);
+}
+
+
 h3 {
   font-family: 'Candal', sans-serif;
   color: #c52d4e;
