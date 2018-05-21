@@ -103,11 +103,11 @@
       {% for article in articles_page.object_list if article.category == 'Eventos' %}
       <div>
         <div class="uk-card uk-card-default uk-card-body">
-          <img class="uk-border-rounded" width="100%" height="40" src="{{ SITEURL }}/theme/css/images/{{article.image}}">
-          <h3>Title</h3>
+          <img alt="{{article.title}}" class="uk-border-rounded" width="100%" height="40" src="{{ SITEURL }}/theme/css/images/{{article.image}}">
+          <h3>{{article.title}}</h3>
           <div>
             <span class="uk-icon-link uk-margin-small-right" uk-icon="clock"></span>
-            <span>{{article.date.strftime("%d. %B %Y %I:%M%p")}}</span>
+            <span>{{article.date.strftime("%d. %B %Y")}}</span>
           </div>
           <div>
             <span class="uk-icon-link uk-margin-small-right" uk-icon="location"></span>
