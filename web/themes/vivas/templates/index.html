@@ -101,21 +101,23 @@
     <h3> Eventos </h3>
     <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
       {% for article in articles_page.object_list %}
-      <div>
-        <div class="uk-card uk-card-default uk-card-body">
-          <img alt="{{article.title}}" class="uk-border-rounded" width="100%" height="40" src="{{ SITEURL }}/theme/css/images/{{article.image}}">
-          <h3>{{article.title}}</h3>
-          <div>
-            <span class="uk-icon-link uk-margin-small-right" uk-icon="clock"></span>
-            <span>{{article.date.strftime("%d. %B %Y")}}</span>
+        {% if article.category == 'Eventos' %}
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <img alt="{{article.title}}" class="uk-border-rounded" width="100%" height="40" src="{{ SITEURL }}/theme/css/images/{{article.image}}">
+            <h3>{{article.title}}</h3>
+            <div>
+              <span class="uk-icon-link uk-margin-small-right" uk-icon="clock"></span>
+              <span>{{article.date.strftime("%d. %B %Y")}}</span>
+            </div>
+            <div>
+              <span class="uk-icon-link uk-margin-small-right" uk-icon="location"></span>
+              <span>{{article.venue}}</span>
+            </div>
+            <h4><a class="uk-link-heading" href="{{article.url}}">Más Información</a></h4>
           </div>
-          <div>
-            <span class="uk-icon-link uk-margin-small-right" uk-icon="location"></span>
-            <span>{{article.venue}}</span>
-          </div>
-          <h4><a class="uk-link-heading" href="{{article.url}}">Más Información</a></h4>
         </div>
-      </div>
+        {% endif %}
       {% endfor %}
       <div class="uk-flex uk-flex-center uk-width-1-1">
         <a class="uk-button uk-width-1-3 uk-margin uk-button-large custom-button red-button" href="../category/eventos.html">
