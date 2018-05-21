@@ -3,9 +3,9 @@ Date: 2018-03-04 17:00
 Modified: 2018-02-26 19:12
 Category: Eventos
 Tags: quito, evento
-Slug: evento-1
+Slug: evento-2
 Authors: Pame Plúas
-Summary: Éste es el primer evento
+Summary: Éste es el segundo evento
 Venue:  Parque el Arbolito, Quito
 
 **Hola facilis architecto quod eum?** Nisi temporibus beatae minus ducimus unde. Necessitatibus perferendis similique minus facilis _nostrum quo in ullam_ Distinctio non sapiente molestias iste aliquid Maiores assumenda facilis?
