@@ -7,6 +7,7 @@ Slug: evento-1
 Authors: Pame Plúas
 Summary: Éste es el primer evento
 Venue:  Parque el Arbolito, Quito
+Image: noticias-img.jpg
 
 **Hola facilis architecto quod eum?** Nisi temporibus beatae minus ducimus unde. Necessitatibus perferendis similique minus facilis _nostrum quo in ullam_ Distinctio non sapiente molestias iste aliquid Maiores assumenda facilis?
 
