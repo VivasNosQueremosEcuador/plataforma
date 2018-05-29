@@ -5,7 +5,6 @@ Category: Eventos
 Tags: quito, evento
 Slug: evento-3
 Authors: Pame Plúas
-Summary: Éste es el tercer evento
 Venue:  Parque el Arbolito, Quito
 Image: noticias-img.jpg
 
