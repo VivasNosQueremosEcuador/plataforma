@@ -101,7 +101,7 @@
     <h3> Eventos </h3>
     <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
       {% for article in articles %}
-        {% if article.category == 'Eventos' %}
+        {% if article.venue %}
           <div>
             <div class="uk-card uk-card-default uk-card-body">
               <img alt="{{article.title}}" class="uk-border-rounded" width="100%" height="40" src="{{ SITEURL }}/theme/css/images/{{article.image}}">
