@@ -67,16 +67,18 @@
   <div class="uk-section">
     <h3>Últimas Noticias</h3>
     <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-flex-center" uk-grid>
-      {% for article in articles[0:3] if article.category == 'Noticias' %}
-      <div>
-        <div class="uk-card uk-card-default uk-card-body">
-          <img alt="{{article.title}}" class="uk-border-rounded" width="100%" height="40" src="{{ SITEURL }}/theme/css/images/{{article.image}}">
-          <h4>{{article.date.strftime("%d. %B %Y")}}</h4>
-          <h3>{{article.title}}</h3>
-          <h4>{{article.summary}}</h4>
-          <h4><a class="uk-link-heading" href="{{article.url}}">Leer más</a></h4>
+      {% for article in articles[0:3] %}
+        {% if article.summary %}
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <img alt="{{article.title}}" class="uk-border-rounded" width="100%" height="40" src="{{ SITEURL }}/theme/css/images/{{article.image}}">
+            <h4>{{article.date.strftime("%d. %B %Y")}}</h4>
+            <h3>{{article.title}}</h3>
+            <h4>{{article.summary}}</h4>
+            <h4><a class="uk-link-heading" href="{{article.url}}">Leer más</a></h4>
+          </div>
         </div>
-      </div>
+        {% endif %}
       {% endfor %}
       <div class="uk-flex uk-flex-center uk-width-1-1">
         <a class="uk-button uk-button uk-width-1-3 uk-margin uk-button-large custom-button red-button" href="../category/noticias.html">
@@ -106,7 +108,6 @@
             <div class="uk-card uk-card-default uk-card-body">
               <img alt="{{article.title}}" class="uk-border-rounded" width="100%" height="40" src="{{ SITEURL }}/theme/css/images/{{article.image}}">
               <h3>{{article.title}}</h3>
-              <h3>{{article.category}}</h3>
               <div>
                 <span class="uk-icon-link uk-margin-small-right" uk-icon="clock"></span>
                 <span>{{article.date.strftime("%d. %B %Y %I:%M%p")}}</span>
