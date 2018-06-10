@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 <head>
-  <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/uikit.css" />
-  <link href="https://fonts.googleapis.com/css?family=Candal" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Candal|Nunito+Sans|Source+Sans+Pro" rel="stylesheet">
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/site.css" />
-  {% block extra_css %}
-  {% endblock %}
-  <script src="{{ SITEURL }}/theme/js/uikit.js"></script>
-  <script src="{{ SITEURL }}/theme/js/uikit-icons.js"></script>
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/uikit.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Candal" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Candal|Nunito+Sans|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/site.css"/>
+    {% block extra_css %}
+    {% endblock %}
+    <script src="{{ SITEURL }}/theme/js/uikit.js"></script>
+    <script src="{{ SITEURL }}/theme/js/uikit-icons.js"></script>
 </head>
 
 <body>
-<div class="uk-offcanvas-content">
-    <nav class="uk-navbar-container uk-margin" uk-navbar>
-        <a class="uk-navbar-item uk-logo" href="{{ SITEURL }}/">
-            <img src="{{ SITEURL }}/theme/css/images/logo-vivas-gris.png" alt="">
-        </a>
-    </nav>
+    <div class="uk-offcanvas-content">
+        <nav class="uk-navbar-container uk-margin" uk-navbar>
+            <a class="uk-navbar-item uk-logo" href="{{ SITEURL }}/">
+                <img src="{{ SITEURL }}/theme/css/images/logo-vivas-gris.png" alt="">
+            </a>
+        </nav>
 
-    <div class="uk-float-right">
-    <ul class="uk-iconnav">
-        <li><a href="https://twitter.com/Vivas_Ec" uk-icon="icon: twitter"></a></li>
-        <li><a href="https://www.facebook.com/VivasNosQueremosEcuador" uk-icon="icon: facebook"></a></li>
-        <li><a href="https://www.instagram.com/vivasnosqueremosecuador" uk-icon="icon: instagram"></a></li>
-        <li><a href="https://www.youtube.com/channel/UCblPhjppMQ_ezbT-sHYR9_g" uk-icon="icon: youtube"></a></li>
-    </ul>
+        <div class="uk-float-right">
+            <ul class="uk-iconnav">
+                <li><a href="https://twitter.com/Vivas_Ec" uk-icon="icon: twitter"></a></li>
+                <li><a href="https://www.facebook.com/VivasNosQueremosEcuador" uk-icon="icon: facebook"></a></li>
+                <li><a href="https://www.instagram.com/vivasnosqueremosecuador" uk-icon="icon: instagram"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCblPhjppMQ_ezbT-sHYR9_g" uk-icon="icon: youtube"></a></li>
+            </ul>
+        </div>
+
+        <nav class="uk-navbar uk-visible@m">
+            <ul class="uk-navbar-nav uk-nav-parent-icon">
+                <li><a href="{{ SITEURL }}/">Inicio</a></li>
+                <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
+                <li><a href="../category/historias.html">Las que ya no están</a></li>
+                <li><a href="../pages/participa.html">Participa</a></li>
+                <li><a href="../category/noticias.html">Noticias</a></li>
+                <li><a href="../category/eventos.html">Eventos</a></li>
+                <li><a href="../pages/descargas.html">Descargas</a></li>
+            </ul>
+        </nav>
+
+        <a class="uk-hidden@m" uk-navbar-toggle-icon href="#my-id" uk-toggle></a>
+
+        <div id="my-id" uk-offcanvas>
+            <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="{{ SITEURL }}/">Inicio</a></li>
+                    <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
+                    <li><a href="#">Las que ya no están</a></li>
+                    <li><a href="../pages/participa.html">Participa</a></li>
+                    <li><a href="../category/noticias.html">Noticias</a></li>
+                    <li><a href="../category/eventos.html">Eventos</a></li>
+                    <li><a href="../pages/descargas.html">Descargas</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="uk-container">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        {% block extra_js %}
+        {% endblock %}
     </div>
-
-    <nav class="uk-navbar uk-visible@m">
-        <ul class="uk-navbar-nav uk-nav-parent-icon">
-            <li><a href="{{ SITEURL }}/">Inicio</a></li>
-            <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
-            <li><a href="../category/historias.html">Las que ya no están</a></li>
-            <li><a href="../pages/participa.html">Participa</a></li>
-            <li><a href="../category/noticias.html">Noticias</a></li>
-            <li><a href="../category/eventos.html">Eventos</a></li>
-            <li><a href="../pages/descargas.html">Descargas</a></li>
-        </ul>
-    </nav>
-
-    <a class="uk-hidden@m" uk-navbar-toggle-icon href="#my-id" uk-toggle></a>
-
-    <div id="my-id" uk-offcanvas>
-      <div class="uk-offcanvas-bar">
-
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
-        <ul class="uk-nav uk-nav-default">
-            <li><a href="{{ SITEURL }}/">Inicio</a></li>
-            <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
-            <li><a href="#">Las que ya no están</a></li>
-            <li><a href="../pages/participa.html">Participa</a></li>
-            <li><a href="../category/noticias.html">Noticias</a></li>
-            <li><a href="../category/eventos.html">Eventos</a></li>
-            <li><a href="../pages/descargas.html">Descargas</a></li>
-        </ul>
-
-
-      </div>
-    </div>
-  <div class="uk-container">
-    {% block content %}
-    {% endblock %}
-  </div>
-  {% block extra_js %}
-  {% endblock %}
-  </div>
 </body>
 </html>
