@@ -31,29 +31,44 @@
                 </ul>
             </div>
 
-        <div id="my-id" uk-offcanvas>
-            <div class="uk-offcanvas-bar">
 
-                <button class="uk-offcanvas-close" type="button" uk-close></button>
-                <ul class="uk-nav uk-nav-default">
+            <nav class="uk-navbar uk-visible@m">
+                <ul class="uk-navbar-nav uk-nav-parent-icon">
                     <li><a href="{{ SITEURL }}/">Inicio</a></li>
                     <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
-                    <li><a href="#">Las que ya no están</a></li>
+                    <li><a href="../category/historias.html">Las que ya no están</a></li>
                     <li><a href="../pages/participa.html">Participa</a></li>
                     <li><a href="../category/noticias.html">Noticias</a></li>
                     <li><a href="../category/eventos.html">Eventos</a></li>
                     <li><a href="../pages/descargas.html">Descargas</a></li>
                 </ul>
-            </div>
-        </div>
+            </nav>
 
-        <div class="uk-container">
+            <a class="uk-hidden@m" uk-navbar-toggle-icon href="#my-id" uk-toggle></a>
+
+            <div id="my-id" uk-offcanvas>
+                <div class="uk-offcanvas-bar">
+
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <ul class="uk-nav uk-nav-default">
+                        <li><a href="{{ SITEURL }}/">Inicio</a></li>
+                        <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
+                        <li><a href="#">Las que ya no están</a></li>
+                        <li><a href="../pages/participa.html">Participa</a></li>
+                        <li><a href="../category/noticias.html">Noticias</a></li>
+                        <li><a href="../category/eventos.html">Eventos</a></li>
+                        <li><a href="../pages/descargas.html">Descargas</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
             {% block content %}
             {% endblock %}
-        </div>
 
-        {% block extra_js %}
-        {% endblock %}
+            {% block extra_js %}
+            {% endblock %}
+        </div>
     </div>
 </body>
-</html>
+</html> 
