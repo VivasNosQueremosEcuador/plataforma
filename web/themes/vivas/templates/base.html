@@ -16,34 +16,20 @@
 
 <body>
     <div class="uk-offcanvas-content">
-        <nav class="uk-navbar-container uk-margin" uk-navbar>
-            <a class="uk-navbar-item uk-logo" href="{{ SITEURL }}/">
-                <img src="{{ SITEURL }}/theme/css/images/logo-vivas-gris.png" alt="">
-            </a>
-        </nav>
-
-        <div class="uk-float-right">
-            <ul class="uk-iconnav">
-                <li><a href="https://twitter.com/Vivas_Ec" uk-icon="icon: twitter"></a></li>
-                <li><a href="https://www.facebook.com/VivasNosQueremosEcuador" uk-icon="icon: facebook"></a></li>
-                <li><a href="https://www.instagram.com/vivasnosqueremosecuador" uk-icon="icon: instagram"></a></li>
-                <li><a href="https://www.youtube.com/channel/UCblPhjppMQ_ezbT-sHYR9_g" uk-icon="icon: youtube"></a></li>
-            </ul>
-        </div>
-
-        <nav class="uk-navbar uk-visible@m">
-            <ul class="uk-navbar-nav uk-nav-parent-icon">
-                <li><a href="{{ SITEURL }}/">Inicio</a></li>
-                <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
-                <li><a href="../category/historias.html">Las que ya no están</a></li>
-                <li><a href="../pages/participa.html">Participa</a></li>
-                <li><a href="../category/noticias.html">Noticias</a></li>
-                <li><a href="../category/eventos.html">Eventos</a></li>
-                <li><a href="../pages/descargas.html">Descargas</a></li>
-            </ul>
-        </nav>
-
-        <a class="uk-hidden@m" uk-navbar-toggle-icon href="#my-id" uk-toggle></a>
+        <div class="uk-container">
+            <div>
+                <a class="uk-logo" href="{{ SITEURL }}/">
+                    <img src="{{ SITEURL }}/theme/css/images/logo-vivas-gris.png" alt="Vivas Nos Queremos">
+                </a>
+                <ul id="media-icon-bar" class="uk-iconnav uk-float-right uk-visible@m">
+                    <li><a href="https://twitter.com/Vivas_Ec" uk-icon="icon: twitter"></a></li>
+                    <li><a href="https://www.facebook.com/VivasNosQueremosEcuador" uk-icon="icon: facebook"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/vivasnosqueremosecuador" uk-icon="icon: instagram"></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCblPhjppMQ_ezbT-sHYR9_g" uk-icon="icon: youtube"></a></li>
+                </ul>
+            </div>
 
         <div id="my-id" uk-offcanvas>
             <div class="uk-offcanvas-bar">
