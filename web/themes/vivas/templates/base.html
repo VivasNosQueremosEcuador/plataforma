@@ -15,45 +15,58 @@
 </head>
 
 <body>
-  <nav class="uk-navbar-container uk-margin" uk-navbar>
-    <a class="uk-navbar-item uk-logo" href="{{ SITEURL }}/">
-      <img src="{{ SITEURL }}/theme/css/images/logo-vivas-gris.png" alt="">
-    </a>
-    <div class="uk-navbar-left">
-      <ul class="uk-navbar-nav">
-        <li class="active">
-          <a href="{{ SITEURL }}/">Inicio</a>
-        </li>
-        {% if DISPLAY_CATEGORIES_ON_MENU %}
-          {% for cat, null in categories %}
-            <li{% if cat == category %} class="active"{% endif %}>
-              <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
-            </li>
-          {% endfor %}
-        {% endif %}
-        {% if DISPLAY_PAGES_ON_MENU %}
-          {% for p in pages %}
-            <li{% if p == page %} class="active"{% endif %}>
-              <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
-            </li>
-          {% endfor %}
-        {% endif %}
-      </ul>
+<div class="uk-offcanvas-content">
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
+        <a class="uk-navbar-item uk-logo" href="{{ SITEURL }}/">
+            <img src="{{ SITEURL }}/theme/css/images/logo-vivas-gris.png" alt="">
+        </a>
+        <div class="uk-navbar-right">
+            <ul class="uk-iconnav">
+                <li><a href="https://twitter.com/Vivas_Ec" uk-icon="icon: twitter; ratio: 1.5"></a></li>
+                <li><a href="https://www.facebook.com/VivasNosQueremosEcuado" uk-icon="icon: facebook; ratio: 1.5"></a></li>
+                <li><a href="https://www.instagram.com/vivasnosqueremosecuador" uk-icon="icon: instagram; ratio: 1.5"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCblPhjppMQ_ezbT-sHYR9_g" uk-icon="icon: youtube; ratio: 1.5"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="uk-navbar uk-visible@m">
+        <ul class="uk-navbar-nav uk-nav-parent-icon">
+            <li><a href="{{ SITEURL }}/">Inicio</a></li>
+            <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
+            <li><a href="#">Las que ya no están</a></li>
+            <li><a href="../pages/participa.html">Participa</a></li>
+            <li><a href="../category/noticias.html">Noticias</a></li>
+            <li><a href="../category/eventos.html">Eventos</a></li>
+            <li><a href="../pages/descargas.html">Descargas</a></li>
+        </ul>
+    </nav>
+
+    <a class="uk-hidden@m" uk-navbar-toggle-icon href="#my-id" uk-toggle></a>
+
+    <div id="my-id" uk-offcanvas>
+      <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+            <li><a href="{{ SITEURL }}/">Inicio</a></li>
+            <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
+            <li><a href="#">Las que ya no están</a></li>
+            <li><a href="../pages/participa.html">Participa</a></li>
+            <li><a href="../category/noticias.html">Noticias</a></li>
+            <li><a href="../category/eventos.html">Eventos</a></li>
+            <li><a href="../pages/descargas.html">Descargas</a></li>
+        </ul>
+
+
+      </div>
     </div>
-    <div class="uk-navbar-right">
-      <ul class="uk-iconnav">
-        <li><a href="https://twitter.com/Vivas_Ec" uk-icon="icon: twitter; ratio: 1.5"></a></li>
-        <li><a href="https://www.facebook.com/VivasNosQueremosEcuado" uk-icon="icon: facebook; ratio: 1.5"></a></li>
-        <li><a href="https://www.instagram.com/vivasnosqueremosecuador" uk-icon="icon: instagram; ratio: 1.5"></a></li>
-        <li><a href="https://www.youtube.com/channel/UCblPhjppMQ_ezbT-sHYR9_g" uk-icon="icon: youtube; ratio: 1.5"></a></li>
-      </ul>
-    </div>
-  </nav>
   <div class="uk-container">
     {% block content %}
     {% endblock %}
   </div>
   {% block extra_js %}
   {% endblock %}
+  </div>
 </body>
 </html>
