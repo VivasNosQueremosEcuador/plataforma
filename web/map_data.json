@@ -1,0 +1,32 @@
+{
+  "pais": {
+    "total": "4",
+    "faltante": "0"
+  },
+  "provincias": [
+    {
+      "provincia": "Azuay",
+      "total": "1",
+      "coordenada_x": "-2.883333",
+      "coordenada_y": "-79"
+    },
+    {
+      "provincia": "Cañar",
+      "total": "1",
+      "coordenada_x": "-2.883333",
+      "coordenada_y": "-79"
+    },
+    {
+      "provincia": "Guayas",
+      "total": "1",
+      "coordenada_x": "-2.883333",
+      "coordenada_y": "-79"
+    },
+    {
+      "provincia": "Santo Domingo de los Tsáchilas",
+      "total": "1",
+      "coordenada_x": "-2.883333",
+      "coordenada_y": "-79"
+    }
+  ]
+}

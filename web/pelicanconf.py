@@ -33,3 +33,9 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 10
 
 RELATIVE_URLS = True
+
+# Custom variables for our project, they are accessible on the templates
+# under the VIVAS dictionary.
+VIVAS = {
+    'map_data': open('map_data.json').read()
+}
