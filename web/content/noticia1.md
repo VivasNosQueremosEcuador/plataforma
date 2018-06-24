@@ -5,7 +5,7 @@ Category: Noticias
 Tags: quito, noticia
 Slug: noticia-1
 Authors: Pame Plúas
-Summary: Primera Noticia
+Summary: Primera Noticia / Lorem fugit atque error voluptas perferendis Libero aperiam ex laborum iste porro ex Illo aspernatur obcaecati recusandae illum aut delectus Laboriosam ab autem atque sunt aperiam mollitia quia earum At.
 Image: noticias-img.jpg
 
 Lorem fugit atque error voluptas perferendis Libero aperiam ex laborum iste porro ex Illo aspernatur obcaecati recusandae illum aut delectus Laboriosam ab autem atque sunt aperiam mollitia quia earum At.

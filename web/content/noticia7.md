@@ -3,9 +3,9 @@ Date: 2018-05-01 00:13
 Modified: 2018-04-07 00:13
 Category: Noticias
 Tags: quito, noticia
-Slug: noticia-4
+Slug: noticia-7
 Authors: Pame Plúas
-Summary: Cuarta Noticia / Lorem fugit atque error voluptas perferendis Libero aperiam ex laborum iste porro ex Illo aspernatur obcaecati recusandae illum aut delectus Laboriosam ab autem atque sunt aperiam mollitia quia earum At.
+Summary: Séptima Noticia / Lorem fugit atque error voluptas perferendis Libero aperiam ex laborum iste porro ex Illo aspernatur obcaecati recusandae illum aut delectus Laboriosam ab autem atque sunt aperiam mollitia quia earum At.
 Image: noticias-img.jpg
 
 Lorem fugit atque error voluptas perferendis Libero aperiam ex laborum iste porro ex Illo aspernatur obcaecati recusandae illum aut delectus Laboriosam ab autem atque sunt aperiam mollitia quia earum At.
