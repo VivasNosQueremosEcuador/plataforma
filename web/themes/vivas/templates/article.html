@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="content">
+  <h1 class="uk-heading-divider">{{ article.title }}</h1>
+  <h4>{{article.author}}</h4>
+  <h4>{{article.date.strftime("%d. %B %Y")}}</h4>
+  <h4>{{article.category}}</h4>
+  <div>
+    <img alt="{{article.title}}" class="uk-img uk-border-rounded uk-align-center" width="640" height="427" src="{{ SITEURL }}/theme/css/images/{{article.image}}">
+  </div>
+  <div>
+    {{ article.content }}
+  </div>
+</section>
+{% endblock content %}
