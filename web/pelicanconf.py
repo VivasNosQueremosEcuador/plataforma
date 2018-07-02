@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import io
 
 AUTHOR = 'Vivas Nos Queremos Ecuador'
 SITENAME = 'Vivas Nos Queremos Ecuador'
@@ -37,5 +38,5 @@ RELATIVE_URLS = True
 # Custom variables for our project, they are accessible on the templates
 # under the VIVAS dictionary.
 VIVAS = {
-    'map_data': open('map_data.json').read()
+    'map_data': io.open('map_data.json', 'r', encoding='utf-8').read()
 }
