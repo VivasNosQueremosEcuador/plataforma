@@ -7,22 +7,20 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 15
 }).addTo(map)
 
-var coordinates = [
-  [0.011944, -78.431389],
-  [-0.002222, -78.455833],
-  [-2.18093, -79.877929],
-  [-2.194061, -79.879874],
-  [-2.1890881,-79.9362873],
-  [-2.9014, -79.00679],
-  [-3.986703, -79.198936],
-  [-0.457212, -90.274332],
-  [-1.2975, -90.434167]
-]
+var provincias = VIVAS.mapData.provincias
+
+var coordenadas = []
+
+for (var i = 0; i < provincias.length; i++) {
+  for (var j = 0; j < provincias[i].cantones.length; j++) {
+    coordenadas.push(provincias[i].cantones[j].coordenadas)
+  }
+}
 
 var clusterGroup = L.markerClusterGroup()
 
-coordinates.forEach(function(coordinate) {
-  L.marker(coordinate).bindTooltip('Clic para más información')
+coordenadas.forEach(function(coordenada) {
+  L.marker(coordenada).bindTooltip('Clic para más información')
   .on('click', function() {
     UIkit.modal('#map-modal').show()
   }).addTo(clusterGroup)

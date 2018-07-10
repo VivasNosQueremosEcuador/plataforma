@@ -6,27 +6,44 @@
   "provincias": [
     {
       "provincia": "Azuay",
-      "total": "1",
-      "coordenada_x": "-2.883333",
-      "coordenada_y": "-79"
+      "total": "2",
+      "faltante": "0",
+      "cantones": [
+        {
+          "canton": "Chordeleg",
+          "total": "1",
+          "coordenadas": [-2.933333, -78.766667]
+        },
+        {
+          "canton": "Cuenca",
+          "total": "1",
+          "coordenadas": [-2.897414, -79.004481]
+        }
+      ]
     },
     {
-      "provincia": "Cañar",
+      "provincia": "Carchi",
       "total": "1",
-      "coordenada_x": "-2.883333",
-      "coordenada_y": "-79"
+      "faltante": "0",
+      "cantones": [
+        {
+          "canton": "Bolívar",
+          "total": "1",
+          "coordenadas": [0.507099, -77.862454]
+        }
+      ]
     },
     {
       "provincia": "Guayas",
       "total": "1",
-      "coordenada_x": "-2.883333",
-      "coordenada_y": "-79"
-    },
-    {
-      "provincia": "Santo Domingo de los Tsáchilas",
-      "total": "1",
-      "coordenada_x": "-2.883333",
-      "coordenada_y": "-79"
+      "faltante": "0",
+      "cantones": [
+        {
+          "canton": "Guayaquil",
+          "total": "1",
+          "coordenadas": [-2.183333, -79.883333]
+        }
+      ]
     }
   ]
 }
