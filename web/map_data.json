@@ -3,7 +3,42 @@
     "total": "4",
     "faltante": "0"
   },
-  "provincias": [{
+  "provincias": [
+    {
+      "provincia": "Galápagos",
+      "total": "2",
+      "faltante": "0",
+      "cantones": [
+        {
+          "canton": "Isabela",
+          "total": "1",
+          "coordenadas": [-0.4724, -90.6811]
+        },
+        {
+          "canton": "San Cristóbal",
+          "total": "1",
+          "coordenadas": [-0.8, -89.4]
+        }
+      ]
+    },
+    {
+      "provincia": "Pichincha",
+      "total": "2",
+      "faltante": "0",
+      "cantones": [
+        {
+          "canton": "Quito",
+          "total": "1",
+          "coordenadas": [-0.218611, -78.509722]
+        },
+        {
+          "canton": "Cayambe",
+          "total": "1",
+          "coordenadas": [0.043889, -78.1561]
+        }
+      ]
+    },
+    {
       "provincia": "Azuay",
       "total": "2",
       "faltante": "0",
@@ -20,24 +55,157 @@
       ]
     },
     {
-      "provincia": "Carchi",
-      "total": "1",
-      "faltante": "0",
-      "cantones": [{
-        "canton": "Bolívar",
-        "total": "1",
-        "coordenadas": [0.507099, -77.862454]
-      }]
-    },
-    {
       "provincia": "Guayas",
       "total": "1",
       "faltante": "0",
-      "cantones": [{
-        "canton": "Guayaquil",
-        "total": "1",
-        "coordenadas": [-2.183333, -79.883333]
-      }]
+      "cantones": [
+        {
+          "canton": "Guayaquil",
+          "total": "1",
+          "coordenadas": [-2.183333, -79.883333]
+        },
+        {
+          "canton": "Durán",
+          "total": "1",
+          "coordenadas": [-2.166667, -79.833333]
+        }
+      ]
+    },
+    {
+      "provincia": "Imbabura",
+      "total": "2",
+      "faltante": "0",
+      "cantones": [
+        {
+          "canton": "Cotacachi",
+          "total": "1",
+          "coordenadas": [0.3, -78.266667]
+        },
+        {
+          "canton": "Ibarra",
+          "total": "1",
+          "coordenadas": [0.362678, -78.130667]
+        }
+      ]
+    },
+    {
+      "provincia": "Tungurahua",
+      "total": "2",
+      "faltante": "0",
+      "cantones": [
+        {
+          "canton": "Ambato",
+          "total": "1",
+          "coordenadas": [-1.241667, -78.619722]
+        },
+        {
+          "canton": "Quero",
+          "total": "1",
+          "coordenadas": [-1.3793, -78.607]
+        }
+      ]
+    },
+    {
+      "provincia": "Carchi",
+      "total": "2",
+      "faltante": "0",
+      "cantones": [
+        {
+          "canton": "Bolívar",
+          "total": "1",
+          "coordenadas": [0.507099, -77.862454]
+        },
+        {
+          "canton": "Tulcán",
+          "total": "1",
+          "coordenadas": [-0.25, -78.59]
+        }
+      ]
+    },
+    {
+      "provincia": "El Oro",
+      "total": "2",
+      "faltante": "0",
+      "cantones": [
+        {
+          "canton": "Machala",
+          "total": "1",
+          "coordenadas": [-3.266667, -79.966667]
+        },
+        {
+          "canton": "Piñas",
+          "total": "1",
+          "coordenadas": [-3.666667, -79.65]
+        }
+      ]
+    },
+    {
+      "provincia": "Loja",
+      "total": "2",
+      "faltante": "0",
+      "cantones": [
+        {
+          "canton": "Loja",
+          "total": "1",
+          "coordenadas": [-3.983333, -79.2]
+        },
+        {
+          "canton": "Saraguro",
+          "total": "1",
+          "coordenadas": [-3.6253, -79.2411]
+        }
+      ]
+    },
+    {
+      "provincia": "Manabí",
+      "total": "2",
+      "faltante": "0",
+      "cantones": [
+        {
+          "canton": "Jama",
+          "total": "1",
+          "coordenadas": [-0.2014, -80.2659]
+        },
+        {
+          "canton": "Pedernales",
+          "total": "1",
+          "coordenadas": [0.0701, -80.0536]
+        }
+      ]
+    },
+    {
+      "provincia": "Cañar",
+      "total": "2",
+      "faltante": "0",
+      "cantones": [
+        {
+          "canton": "Azogues",
+          "total": "1",
+          "coordenadas": [-2.733333, -78.833333]
+        },
+        {
+          "canton": "Déleg",
+          "total": "1",
+          "coordenadas": [-2.7726, -78.9183]
+        }
+      ]
+    },
+    {
+      "provincia": "Esmeraldas",
+      "total": "2",
+      "faltante": "0",
+      "cantones": [
+        {
+          "canton": "Atacames",
+          "total": "1",
+          "coordenadas": [0.866667, -79.833333]
+        },
+        {
+          "canton": "Quinindé",
+          "total": "1",
+          "coordenadas": [0.33, -79.48]
+        }
+      ]
     },
     {
       "provincia": "Los Ríos",
