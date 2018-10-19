@@ -1,0 +1,152 @@
+{
+  "pais": {
+    "total": "4",
+    "faltante": "0"
+  },
+  "provincias": [
+    {
+      "provincia": "Azuay",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-2.883333, -79]
+    },
+    {
+      "provincia": "Bolívar",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-1.6, -79]
+    },
+    {
+      "provincia": "Cañar",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-2.733333, -78.833333]
+    },
+    {
+      "provincia": "Carchi",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [0.75, -78.083333]
+    },
+    {
+      "provincia": "Chimborazo",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-1.666667, -78.65]
+    },
+    {
+      "provincia": "Cotopaxi",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-0.933333, -78.616667]
+    },
+    {
+      "provincia": "El Oro",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-3.266669, -79.9667]
+    },
+    {
+      "provincia": "Esmeraldas",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [0.74, -79.16]
+    },
+    {
+      "provincia": "Galápagos",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-0.560278, -91.040833]
+    },
+    {
+      "provincia": "Guayas",
+      "total": "1",
+      "faltante": "0",
+      "coordenadas": [-2.2, -79.9667]
+    },
+    {
+      "provincia": "Imbabura",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [0.35, -78.133333]
+    },
+    {
+      "provincia": "Loja",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-4.05, -79.65]
+    },
+    {
+      "provincia": "Los Ríos",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-1.766669, -79.45]
+    },
+    {
+      "provincia": "Manabí",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-1.052219, -80.4506]
+    },
+    {
+      "provincia": "Morona Santiago",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-2.366667, -78.133333]
+    },
+    {
+      "provincia": "Napo",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-0.67, -77.94]
+    },
+    {
+      "provincia": "Orellana",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-0.933333, -75.666667]
+    },
+    {
+      "provincia": "Pastaza",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-1.490278, -78.002222]
+    },
+    {
+      "provincia": "Pichincha",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-0.25, -78.583333]
+    },
+    {
+      "provincia": "Santa Elena",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-2.2267, -80.8583]
+    },
+    {
+      "provincia": "Santo Domingo",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-0.333333, -79.25]
+    },
+    {
+      "provincia": "Sucumbíos",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-0.083333, -76.883333]
+    },
+    {
+      "provincia": "Tungurahua",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-1.233333, -78.616667]
+    },
+    {
+      "provincia": "Zamora Chinchipe",
+      "total": "2",
+      "faltante": "0",
+      "coordenadas": [-4.069167, -78.956667]
+    }
+  ]
+}
