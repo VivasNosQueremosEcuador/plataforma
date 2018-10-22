@@ -16,7 +16,7 @@ for (var i = 0; i < provincias.length; i++) {
 console.log('VIVAS:', VIVAS.mapData);
 
 provincias.forEach(function (provincia) {
-    L.marker(provincia.coordenadas).bindTooltip('Click para más información')
+    L.marker(provincia.coordenadas).bindTooltip('Click para más información de ' + provincia.provincia)
         .on('click', function () {
             document.getElementById('uk-modal-title').innerText = 'Provincia ' + provincia.provincia
             var x = document.createElement("P");
