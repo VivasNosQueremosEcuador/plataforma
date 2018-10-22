@@ -10,14 +10,22 @@ var provincias = VIVAS.mapData.provincias
 var coordenadas = []
 
 for (var i = 0; i < provincias.length; i++) {
-  coordenadas.push(provincias[i].coordenadas)
+    coordenadas.push(provincias[i].coordenadas)
 }
 
+console.log('VIVAS:', VIVAS.mapData);
+console.log('coordenadas:', coordenadas);
 
-coordenadas.forEach(function(coordenada) {
-  L.marker(coordenada).bindTooltip('Clic para más información')
-  .on('click', function() {
-    UIkit.modal('#map-modal').show()
-  }).addTo(map)
+provincias.forEach(function (provincia) {
+    console.log(provincia);
+    L.marker(provincia.coordenadas).bindTooltip('Click para más información')
+        .on('click', function () {
+            document.getElementById('uk-modal-title').innerText = 'Provincia ' + provincia.provincia
+            var x = document.createElement("P");
+            var t = document.createTextNode("Totales:" + provincia.total)
+            x.appendChild(t);
+            document.getElementById('modal-body').appendChild(x)
+            UIkit.modal('#map-modal').show()
+        }).addTo(map)
 })
 
