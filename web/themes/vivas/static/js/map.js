@@ -15,21 +15,22 @@ provincias.forEach(function (provincia) {
             document.getElementById('modal-title').innerText = 'Provincia ' + provincia.provincia
             document.getElementById('modal-body').innerHTML = '<div class="uk-child-width-1-2@s uk-grid-match uk-text-center" uk-grid>' +
                 '<div>\n' +
-                '        <div class="uk-card uk-card-hover uk-card-small uk-card-body">\n' +
+                '        <div class="uk-card uk-card-hover uk-card-small uk-card-body uk-background-muted">\n' +
                 '            <h3 class="uk-card-title">' + provincia.total + '</h3>\n' +
                 '            <p>feminicidios contados</p>\n' +
                 '        </div>\n' +
                 '    </div>\n' +
                 '    <div>\n' +
-                '        <div class="uk-card uk-card-hover uk-card-small uk-card-body">\n' +
+                '        <div class="uk-card uk-card-hover uk-card-small uk-card-body uk-background-muted">\n' +
                 '            <h3 class="uk-card-title">' + provincia.faltante + '</h3>\n' +
                 '            <p>feminicidios con historias faltantes</p>\n' +
                 '        </div>\n' +
                 '    </div>' +
                 '</div>'
             document.getElementById('modal-link').innerHTML = '<a href="./category/azuay.html" ' +
-                'class="uk-button uk-button-text">' +
-                'Conoce las que nos faltan ... </a>'
+                'class="uk-button-text uk-text-meta">' +
+                'Conoce las que nos faltan ... ' +
+                '<span class="uk-icon-link uk-margin-small-right" uk-icon="arrow-right"></span></a>'
             UIkit.modal('#map-modal').show()
             //TODO('Agregar link a categories/provincia')s
         }).addTo(map)
