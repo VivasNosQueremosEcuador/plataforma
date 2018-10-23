@@ -27,9 +27,10 @@ provincias.forEach(function (provincia) {
                 '        </div>\n' +
                 '    </div>' +
                 '</div>'
+            document.getElementById('modal-link').innerHTML = '<a href="./category/azuay.html" ' +
+                'class="uk-button uk-button-text">' +
+                'Conoce las que nos faltan ... </a>'
             UIkit.modal('#map-modal').show()
             //TODO('Agregar link a categories/provincia')s
         }).addTo(map)
 })
-
-s
