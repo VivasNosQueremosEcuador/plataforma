@@ -13,10 +13,9 @@
   src: url(../fonts/nanami/Nanami-Bold.otf);
 }
 
-
 h3 {
   font-family: 'Nanami-Bold', 'Candal', sans-serif;
-  color: #c52d4e;
+  color: #AE2C80;
 }
 
 .uk-navbar-container {
@@ -29,7 +28,7 @@ h3 {
 }
 
 .uk-card > h3 {
-  color: #c52d4e;
+  color: #AE2C80;
   font-family: 'Candal', sans-serif;
   font-size: 1.5rem;
   line-height: 1.4;
@@ -72,8 +71,8 @@ h3 {
 }
 
 .red-button {
-  border-color: #c52d4e;
-  color: #c52d4e;
+  border-color: #AE2C80;
+  color: #AE2C80;
 }
 
 .white-button {
@@ -84,7 +83,7 @@ h3 {
 
 
 #redes-sociales {
-  background-color: #c52d4e;
+  background-color: #AE2C80;
 }
 
 #redes-sociales h3 {
@@ -92,7 +91,7 @@ h3 {
 }
 
 .uk-iconnav > * > * {
-  color: #c52d4e;
+  color: #AE2C80;
 }
 
 #media-icon-bar {
