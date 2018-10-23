@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{{ SITEURL }}/theme/css/leaflet.css" />
-<link rel="stylesheet" href="{{ SITEURL }}/theme/css/MarkerCluster.css" />
-<link rel="stylesheet" href="{{ SITEURL }}/theme/css/MarkerCluster.Default.css" />
-<link rel="stylesheet" href="{{ SITEURL }}/theme/css/map.css" />
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/leaflet.css"/>
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/MarkerCluster.css"/>
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/MarkerCluster.Default.css"/>
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/map.css"/>
 {% endblock %}
 
 {% block extra_js %}
@@ -25,126 +25,141 @@ VIVAS.mapData = {{ VIVAS['map_data'] }}
     <div id="map-wrapper"></div>
     <div id="map-modal" uk-modal>
         <div class="uk-modal-dialog uk-modal-body">
-            <h2 class="uk-modal-title" id="uk-modal-title">Hola</h2>
-            <div id="modal-body"></div>
-            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="uk-modal-title" id="modal-title"></h2>
+            <div class="uk-modal-body">
+                <div id="modal-body"></div>
+            </div>
+            <div class="uk-modal-footer">
+                <div id="modal-link">c</div>
+            </div>
+            <button class="uk-modal-close-default" type="button" uk-close onclick=""></button>
         </div>
     </div>
 
 
-{% if page_name != 'index' %}
-  {% block content_title %}
-  <h2>All articles</h2>
-  {% endblock %}
+    {% if page_name != 'index' %}
+    {% block content_title %}
+    <h2>All articles</h2>
+    {% endblock %}
 
-  <ol id="post-list">
-    {% for article in articles_page.object_list %}
-    <li><article class="hentry">
-        <header>
-          <h2 class="entry-title">
-            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-              {{ article.title }}
-            </a>
-          </h2>
-        </header>
-        <footer class="post-info">
-          <time class="published" datetime="{{ article.date.isoformat() }}">
-            {{ article.locale_date }}
-          </time>
-          <address class="vcard author">
-            By
-            {% for author in article.authors %}
-            <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
-            {% endfor %}
-          </address>
-        </footer>
-        <div class="entry-content"> {{ article.summary }} </div>
-      </article></li>
-      {% endfor %}
-  </ol>
-  {% if articles_page.has_other_pages() %}
-  {% include 'pagination.html' %}
-  {% endif %}
-{% endif %}
+    <ol id="post-list">
+        {% for article in articles_page.object_list %}
+        <li>
+            <article class="hentry">
+                <header>
+                    <h2 class="entry-title">
+                        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+                           title="Permalink to {{ article.title|striptags }}">
+                            {{ article.title }}
+                        </a>
+                    </h2>
+                </header>
+                <footer class="post-info">
+                    <time class="published" datetime="{{ article.date.isoformat() }}">
+                        {{ article.locale_date }}
+                    </time>
+                    <address class="vcard author">
+                        By
+                        {% for author in article.authors %}
+                        <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+                        {% endfor %}
+                    </address>
+                </footer>
+                <div class="entry-content"> {{ article.summary }}</div>
+            </article>
+        </li>
+        {% endfor %}
+    </ol>
+    {% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+    {% endif %}
+    {% endif %}
 </section>
 
 <section id="noticias">
-  <div class="uk-section">
-    <h3>Últimas Noticias</h3>
-    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-flex-center" uk-grid>
-      {% for article in articles[0:3] %}
-        {% if article.summary %}
-        <div>
-          <div class="uk-card uk-card-default uk-card-body">
-            <img alt="{{article.title}}" class="uk-border-rounded" width="100%" height="40" src="{{ SITEURL }}/theme/css/images/{{article.image}}">
-            <h4>{{article.date.strftime("%d. %B %Y")}}</h4>
-            <h3>{{article.title}}</h3>
-            <h4>{{article.summary}}</h4>
-            <h4><a class="uk-link-heading" href="{{article.url}}">Leer más</a></h4>
-          </div>
+    <div class="uk-section">
+        <h3>Últimas Noticias</h3>
+        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-flex-center" uk-grid>
+            {% for article in articles[0:3] %}
+            {% if article.summary %}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <img alt="{{article.title}}" class="uk-border-rounded" width="100%" height="40"
+                         src="{{ SITEURL }}/theme/css/images/{{article.image}}">
+                    <h4>{{article.date.strftime("%d. %B %Y")}}</h4>
+                    <h3>{{article.title}}</h3>
+                    <h4>{{article.summary}}</h4>
+                    <h4><a class="uk-link-heading" href="{{article.url}}">Leer más</a></h4>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+            <div class="uk-flex uk-flex-center uk-width-1-1">
+                <a class="uk-button uk-button uk-width-1-3 uk-margin uk-button-large custom-button red-button"
+                   href="../category/noticias.html">
+                    Ver más noticias
+                </a>
+            </div>
         </div>
-        {% endif %}
-      {% endfor %}
-      <div class="uk-flex uk-flex-center uk-width-1-1">
-        <a class="uk-button uk-button uk-width-1-3 uk-margin uk-button-large custom-button red-button" href="../category/noticias.html">
-          Ver más noticias
-        </a>
-      </div>
     </div>
-  </div>
 </section>
 
 <section id="participa" hidden>
-  <div class="uk-section uk-light uk-background-cover" style="background-image: url({{ SITEURL }}/theme/css/images/participa-bkgd.png)">
-    <h3> ¡PARTICIPA! </h3>
-    <h4>Existen varias formas de participar</h4>
-    <div class="uk-flex uk-flex-center uk-width-1-1">
-      <a class="uk-button uk-width-1-3 uk-margin uk-button-large custom-button white-button" href="../pages/participa.html">
-        Más información</a>
+    <div class="uk-section uk-light uk-background-cover"
+         style="background-image: url({{ SITEURL }}/theme/css/images/participa-bkgd.png)">
+        <h3> ¡PARTICIPA! </h3>
+        <h4>Existen varias formas de participar</h4>
+        <div class="uk-flex uk-flex-center uk-width-1-1">
+            <a class="uk-button uk-width-1-3 uk-margin uk-button-large custom-button white-button"
+               href="../pages/participa.html">
+                Más información</a>
+        </div>
     </div>
-  </div>
 </section>
 
 <section id="marcha-vivas">
-  <div class="uk-section uk-light uk-background-cover" style="background-image: url({{ SITEURL }}/theme/css/images/participa-bkgd.png)">
-    <h3> ¡PARTICIPA! </h3>
-    <h4>Marcha Nacional Vivas Nos Queremos</h4>
-    <div class="uk-flex uk-flex-center uk-width-1-1">
-      <a class="uk-button uk-width-1-3 uk-margin uk-button-large custom-button white-button" href="https://www.facebook.com/events/343800343032020/">
-        Más información</a>
+    <div class="uk-section uk-light uk-background-cover"
+         style="background-image: url({{ SITEURL }}/theme/css/images/participa-bkgd.png)">
+        <h3> ¡PARTICIPA! </h3>
+        <h4>Marcha Nacional Vivas Nos Queremos</h4>
+        <div class="uk-flex uk-flex-center uk-width-1-1">
+            <a class="uk-button uk-width-1-3 uk-margin uk-button-large custom-button white-button"
+               href="https://www.facebook.com/events/343800343032020/">
+                Más información</a>
+        </div>
+        <div class="uk-flex uk-flex-center uk-width-1-1">
+            <a class="uk-button uk-width-1-3 uk-margin uk-button-large custom-button white-button" href="#">
+                Boletín de Prensa</a>
+        </div>
     </div>
-    <div class="uk-flex uk-flex-center uk-width-1-1">
-      <a class="uk-button uk-width-1-3 uk-margin uk-button-large custom-button white-button" href="#">
-        Boletín de Prensa</a>
-    </div>
-  </div>
 </section>
 
 <section id="eventos" hidden>
-  <div class="uk-section">
-    <h3> Eventos </h3>
-    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-      {% for article in articles %}
-        {% if article.venue %}
-          <div>
-            <div class="uk-card uk-card-default uk-card-body">
-              <img alt="{{article.title}}" class="uk-border-rounded" width="100%" height="40" src="{{ SITEURL }}/theme/css/images/{{article.image}}">
-              <h3>{{article.title}}</h3>
-              <div>
-                <span class="uk-icon-link uk-margin-small-right" uk-icon="clock"></span>
-                <span>{{article.date.strftime("%d. %B %Y %I:%M%p")}}</span>
-              </div>
-              <div>
-                <span class="uk-icon-link uk-margin-small-right" uk-icon="location"></span>
-                <span>{{article.venue}}</span>
-              </div>
-              <h4><a class="uk-link-heading" href="{{article.url}}">Más Información</a></h4>
+    <div class="uk-section">
+        <h3> Eventos </h3>
+        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+            {% for article in articles %}
+            {% if article.venue %}
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <img alt="{{article.title}}" class="uk-border-rounded" width="100%" height="40"
+                         src="{{ SITEURL }}/theme/css/images/{{article.image}}">
+                    <h3>{{article.title}}</h3>
+                    <div>
+                        <span class="uk-icon-link uk-margin-small-right" uk-icon="clock"></span>
+                        <span>{{article.date.strftime("%d. %B %Y %I:%M%p")}}</span>
+                    </div>
+                    <div>
+                        <span class="uk-icon-link uk-margin-small-right" uk-icon="location"></span>
+                        <span>{{article.venue}}</span>
+                    </div>
+                    <h4><a class="uk-link-heading" href="{{article.url}}">Más Información</a></h4>
+                </div>
             </div>
-          </div>
-        {% endif %}
-      {% endfor %}
+            {% endif %}
+            {% endfor %}
+        </div>
     </div>
-  </div>
 </section>
 
 {% endblock content %}
