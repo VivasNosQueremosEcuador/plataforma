@@ -6,7 +6,7 @@ Tags: quito, historia
 Slug: historia-3
 Authors: Pame Pluas
 Summary: Ésta es la tercera historia
-
+Image: noticias-img.jpg
 
 ## Historia 3 - Azuay.
 
