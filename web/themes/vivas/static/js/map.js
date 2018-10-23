@@ -5,12 +5,24 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 15
 }).addTo(map)
 
+// TODO: Agregar mapa sin los colores en la izquierda y partido en dos
+//var imageUrl = '/theme/css/images/mapa_svg.svg',
+//  imageBounds = [[-5.024173, -93.56487], [2.843487, -75.18251]];
+
+//L.imageOverlay(imageUrl, imageBounds).bringToFront().addTo(map);
+
 const provincias = VIVAS.mapData.provincias
 
 console.log('VIVAS:', VIVAS.mapData);
 
 provincias.forEach(function (provincia) {
-    L.marker(provincia.coordenadas).bindTooltip('Click para más información de ' + provincia.provincia)
+  var markerOptions = {
+    icon: L.divIcon({
+        className: 'leaflet-marker-icon marker-text',
+        html: '<span>' + provincia.total + '</span>'
+      })
+    };
+    L.marker(provincia.coordenadas, markerOptions).bindTooltip('Click para más información de ' + provincia.provincia)
         .on('click', function () {
             document.getElementById('modal-title').innerText = 'Provincia ' + provincia.provincia
             document.getElementById('modal-body').innerHTML = '<div class="uk-child-width-1-2@s uk-grid-match uk-text-center" uk-grid>' +

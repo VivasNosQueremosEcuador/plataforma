@@ -6,25 +6,25 @@
   "provincias": [
     {
       "provincia": "Azuay",
-      "total": "2",
+      "total": "22",
       "faltante": "0",
       "coordenadas": [-2.883333, -79]
     },
     {
       "provincia": "Bolívar",
-      "total": "2",
+      "total": "11",
       "faltante": "0",
       "coordenadas": [-1.6, -79]
     },
     {
       "provincia": "Cañar",
-      "total": "2",
+      "total": "90",
       "faltante": "0",
       "coordenadas": [-2.733333, -78.833333]
     },
     {
       "provincia": "Carchi",
-      "total": "2",
+      "total": "333",
       "faltante": "0",
       "coordenadas": [0.75, -78.083333]
     },
@@ -60,7 +60,7 @@
     },
     {
       "provincia": "Guayas",
-      "total": "1",
+      "total": "2",
       "faltante": "0",
       "coordenadas": [-2.2, -79.9667]
     },

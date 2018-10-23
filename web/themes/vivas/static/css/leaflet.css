@@ -1,4 +1,10 @@
 /* required styles */
+.leaflet-marker-icon {
+  border-radius: 50%;
+  width: 20px !important;
+  height: 20px !important;
+  background: #BCA9F5;
+}
 
 .leaflet-pane,
 .leaflet-tile,
