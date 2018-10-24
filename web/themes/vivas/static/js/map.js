@@ -8,7 +8,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // TODO: Agregar mapa sin los colores en la izquierda y partido en dos
 //var imageUrl = '/theme/css/images/mapa_svg.svg',
 //  imageBounds = [[-5.024173, -93.56487], [2.843487, -75.18251]];
-
 //L.imageOverlay(imageUrl, imageBounds).bringToFront().addTo(map);
 
 const provincias = VIVAS.mapData.provincias
