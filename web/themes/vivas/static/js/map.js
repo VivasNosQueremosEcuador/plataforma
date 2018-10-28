@@ -26,13 +26,13 @@ provincias.forEach(function (provincia) {
             document.getElementById('modal-title').innerText = 'Provincia ' + provincia.provincia
             document.getElementById('modal-body').innerHTML = '<div class="uk-child-width-1-2@s uk-grid-match uk-text-center" uk-grid>' +
                 '<div>\n' +
-                '        <div class="uk-card uk-card-hover uk-card-small uk-card-body uk-background-muted">\n' +
+                '        <div class="uk-card uk-card-small uk-card-body uk-background-muted">\n' +
                 '            <h3 class="uk-card-title">' + provincia.total + '</h3>\n' +
                 '            <p>feminicidios contados</p>\n' +
                 '        </div>\n' +
                 '    </div>\n' +
                 '    <div>\n' +
-                '        <div class="uk-card uk-card-hover uk-card-small uk-card-body uk-background-muted">\n' +
+                '        <div class="uk-card uk-card-small uk-card-body uk-background-muted">\n' +
                 '            <h3 class="uk-card-title">' + provincia.faltante + '</h3>\n' +
                 '            <p>feminicidios con historias faltantes</p>\n' +
                 '        </div>\n' +
