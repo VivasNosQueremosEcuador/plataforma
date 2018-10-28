@@ -1,105 +1,117 @@
 @font-face {
-  font-family: Nanami;
-  src: url(../fonts/nanami/Nanami-Regular.otf);
+    font-family: Nanami;
+    src: url(../fonts/nanami/Nanami-Regular.otf);
 }
 
 @font-face {
-  font-family: Nanami-Light;
-  src: url(../fonts/nanami/Nanami-Light.otf);
+    font-family: Nanami-Light;
+    src: url(../fonts/nanami/Nanami-Light.otf);
 }
 
 @font-face {
-  font-family: Nanami-Bold;
-  src: url(../fonts/nanami/Nanami-Bold.otf);
+    font-family: Nanami-Bold;
+    src: url(../fonts/nanami/Nanami-Bold.otf);
 }
 
 h3 {
-  font-family: 'Nanami-Bold', 'Candal', sans-serif;
-  color: #AE2C80;
+    font-family: 'Nanami-Bold', sans-serif;
+    color: #591848;
+}
+
+span, p {
+    font-family: Nanami-Light;
+    font-size: 1em;
+}
+
+.uk-card-body > .uk-link-reset {
+    color: #AE2C80;
+    font-family: 'Candal', sans-serif;
+    font-size: 1em;
+    text-decoration-color: #AE2C80;
 }
 
 .uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
-  font-family: 'Candal', sans-serif;
-  font-size: 1rem;
-  color: #591848;
+    font-family: 'Candal', sans-serif;
+    font-size: 1rem;
+    color: #591848;
 }
 
 .uk-navbar-container {
-  height: 140px;
+    height: 140px;
 }
 
 .uk-logo > img {
-  margin: auto;
-  max-width: 185px;
+    margin: auto;
+    max-width: 185px;
 }
 
-.uk-card > h3 {
-  color: #AE2C80;
-  font-family: 'Candal', sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.4;
-  text-align: center;
-}
-
-.uk-card > h4 {
-  font-family: 'Nanami-Light', 'Candal', sans-serif;
-  text-align: center;
+h3 {
+    color: #591848;
+    font-family: 'Nanami-Bold', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
 }
 
 .uk-card > h5 {
-  font-family: 'Candal', sans-serif;
-  text-align: center;
+    font-family: 'Candal', sans-serif;
+    text-align: center;
 }
 
 .uk-card span {
-  font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .uk-background-cover > h3 {
-  text-align: center;
+    text-align: center;
 }
 
 .uk-background-cover > h4 {
-  text-align: center;
+    text-align: center;
 }
 
 .custom-button {
-  border: 4px solid;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.25rem;
-  text-transform: none;
+    border: 4px solid;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25rem;
+    text-transform: none;
 }
 
-@media only screen and (max-width: 640px){
-  .custom-button {
-    width: 100%;
-  }
+@media only screen and (max-width: 640px) {
+    .custom-button {
+        width: 100%;
+    }
 }
 
 .red-button {
-  border-color: #AE2C80;
-  color: #AE2C80;
+    border-color: #AE2C80;
+    color: #AE2C80;
 }
 
 .white-button {
-  background: transparent;
-  border-color: #f8f8f8;
-  color: #f8f8f8;
+    background: transparent;
+    border-color: #f8f8f8;
+    color: #f8f8f8;
 }
 
-
 #redes-sociales {
-  background-color: #AE2C80;
+    background-color: #AE2C80;
 }
 
 #redes-sociales h3 {
-  color: #f8f8f8;
+    color: #f8f8f8;
 }
 
 .uk-iconnav > * > * {
-  color: #AE2C80;
+    color: #AE2C80;
 }
 
 #media-icon-bar {
-  padding-top: 70px;
+    padding-top: 70px;
+}
+
+h5 {
+    color: #AE2C80;
+    font-family: 'Candal', sans-serif;
+    font-size: 1rem;
+    text-align: center;
 }
