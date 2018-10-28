@@ -18,6 +18,10 @@ h3 {
     color: #591848;
 }
 
+h4 {
+    font-family: Nanami-Light;
+}
+
 span, p {
     font-family: Nanami-Light;
     font-size: 1em;
