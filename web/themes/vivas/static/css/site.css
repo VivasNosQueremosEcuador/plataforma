@@ -18,6 +18,12 @@ h3 {
   color: #AE2C80;
 }
 
+.uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
+  font-family: 'Candal', sans-serif;
+  font-size: 1rem;
+  color: #591848;
+}
+
 .uk-navbar-container {
   height: 140px;
 }
