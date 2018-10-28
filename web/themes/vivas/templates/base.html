@@ -14,97 +14,102 @@
 </head>
 
 <body>
-    <div class="uk-offcanvas-content">
-        <div class="uk-container">
-            <div>
+<div class="uk-offcanvas-content">
+    <div class="uk-container">
+        <nav class="uk-navbar-container uk-margin" uk-navbar>
+            <div class="uk-navbar-left">
                 <a class="uk-logo" href="{{ SITEURL }}/">
                     <img src="{{ SITEURL }}/theme/css/images/logo-morado.png" alt="Vivas Nos Queremos">
                 </a>
-                <ul id="media-icon-bar" class="uk-iconnav uk-float-right uk-visible@m">
-                    <li><a href="https://twitter.com/Vivas_Ec" uk-icon="icon: twitter"></a></li>
-                    <li><a href="https://www.facebook.com/VivasNosQueremosEcuador" uk-icon="icon: facebook"></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/vivasnosqueremosecuador" uk-icon="icon: instagram"></a>
-                    </li>
-                    <li><a href="https://www.youtube.com/channel/UCblPhjppMQ_ezbT-sHYR9_g" uk-icon="icon: youtube"></a></li>
-                </ul>
-            </div>
-
-
-            <nav class="uk-navbar uk-visible@m">
-                <ul class="uk-navbar-nav uk-nav-parent-icon">
+                <ul class="uk-navbar-nav">
                     <li><a href="{{ SITEURL }}/">Inicio</a></li>
                     <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
                     <li><a href="../pages/historias">Las que ya no están</a></li>
                     <li hidden><a href="../pages/participa.html">Participa</a></li>
                     <li><a href="../category/noticias.html">Noticias</a></li>
                 </ul>
-            </nav>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="https://twitter.com/Vivas_Ec" uk-icon="icon: twitter"></a></li>
+                    <li><a href="https://www.facebook.com/VivasNosQueremosEcuador" uk-icon="icon: facebook"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/vivasnosqueremosecuador" uk-icon="icon: instagram"></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCblPhjppMQ_ezbT-sHYR9_g"
+                           uk-icon="icon: youtube"></a></li>
+                </ul>
+            </div>
+        </nav>
 
-            <a class="uk-hidden@m" uk-navbar-toggle-icon href="#my-id" uk-toggle></a>
+        <a class="uk-hidden@m" uk-navbar-toggle-icon href="#my-id" uk-toggle></a>
 
-            <div id="my-id" uk-offcanvas>
-                <div class="uk-offcanvas-bar">
+        <div id="my-id" uk-offcanvas>
+            <div class="uk-offcanvas-bar">
 
-                    <button class="uk-offcanvas-close" type="button" uk-close></button>
-                    <ul class="uk-nav uk-nav-default">
-                        <li><a href="{{ SITEURL }}/">Inicio</a></li>
-                        <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
-                        <li><a href="#">Las que ya no están</a></li>
-                        <li hidden><a href="../pages/participa.html">Participa</a></li>
-                        <li><a href="../category/noticias.html">Noticias</a></li>
-                        <li><a href="../category/eventos.html">Eventos</a></li>
-                    </ul>
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="{{ SITEURL }}/">Inicio</a></li>
+                    <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
+                    <li><a href="#">Las que ya no están</a></li>
+                    <li hidden><a href="../pages/participa.html">Participa</a></li>
+                    <li><a href="../category/noticias.html">Noticias</a></li>
+                    <li><a href="../category/eventos.html">Eventos</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        {% block content %}
+        {% endblock %}
+
+        <section id="redes-sociales">
+            <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
+                <div class="uk-card uk-card-body">
+                    <h3 class="uk-card-title">Facebook</h3>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVivasNosQueremosEcuador&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="340" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowTransparency="true">
+                    </iframe>
+                </div>
+                <div class="uk-card uk-card-body">
+                    <h3 class="uk-card-title">Twitter</h3>
+                    <div>
+                        <a class="twitter-timeline" href="https://twitter.com/Vivas_Ec" data-width="300"
+                           data-height="300">
+                            Vivas_Ec
+                        </a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-body">
+                    <h3 class="uk-card-title">Instagram</h3>
+                    <div>
+                        <iframe src="https://snapwidget.com/embed/531539" class="snapwidget-widget"
+                                allowTransparency="true" frameborder="0" scrolling="no"
+                                style="border:none; overflow:hidden; width:100%; height: 300px"></iframe>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-body">
+                    <h3 class="uk-card-title">Youtube</h3>
+                    <div>
+                        <iframe id="ytplayer" type="text/html" width=100% height="300"
+                                src="https://www.youtube.com/embed/auG8YZBjQp0?autoplay=0"
+                                frameborder="0"></iframe>
+                    </div>
                 </div>
             </div>
+        </section>
 
-
-            {% block content %}
-            {% endblock %}
-
-            <section id="redes-sociales">
-              <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
-                <div class="uk-card uk-card-body">
-                  <h3 class="uk-card-title">Facebook</h3>
-                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVivasNosQueremosEcuador&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                    width="340" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
-                  </iframe>
-                </div>
-                <div class="uk-card uk-card-body">
-                  <h3 class="uk-card-title">Twitter</h3>
-                  <div>
-                    <a class="twitter-timeline" href="https://twitter.com/Vivas_Ec" data-width="300" data-height="300">
-                      Vivas_Ec
-                    </a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                  </div>
-                </div>
-                <div class="uk-card uk-card-body">
-                  <h3 class="uk-card-title">Instagram</h3>
-                  <div>
-                    <iframe src="https://snapwidget.com/embed/531539" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height: 300px"></iframe>
-                  </div>
-                </div>
-                <div class="uk-card uk-card-body">
-                  <h3 class="uk-card-title">Youtube</h3>
-                  <div>
-                    <iframe id="ytplayer" type="text/html" width=100% height="300"
-                            src="https://www.youtube.com/embed/auG8YZBjQp0?autoplay=0"
-                            frameborder="0"></iframe>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section id="footer">
-              <div class="uk-section uk-flex uk-flex-center uk-width-1-1 uk-h4">
+        <section id="footer">
+            <div class="uk-section uk-flex uk-flex-center uk-width-1-1 uk-h4">
                 <span> © 2018 Vivas Nos Queremos Ecuador. Todos los derechos reservados. </span>
-              </div>
-            </section>
+            </div>
+        </section>
 
-            {% block extra_js %}
-            {% endblock %}
-        </div>
+        {% block extra_js %}
+        {% endblock %}
     </div>
+</div>
 </body>
 </html>
