@@ -55,6 +55,12 @@ h1 {
     font-size: 2em;
 }
 
+h2 {
+    color: #591848;
+    font-family: 'Candal', sans-serif;
+    font-size: 1.75em;
+}
+
 h3 {
     color: #591848;
     font-family: 'Nanami-Bold', sans-serif;
