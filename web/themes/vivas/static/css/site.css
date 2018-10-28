@@ -52,6 +52,14 @@ h3 {
     line-height: 1.4;
 }
 
+.uk-card-body > h3 {
+    color: #591848;
+    font-family: 'Nanami-Bold', sans-serif;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
 .uk-card > h5 {
     font-family: 'Candal', sans-serif;
     text-align: center;
@@ -70,9 +78,9 @@ h3 {
 }
 
 .custom-button {
-    border: 4px solid;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.25rem;
+    border: 3px solid;
+    font-family: 'Candal', sans-serif;
+    font-size: 1.125em;
     text-transform: none;
 }
 
@@ -112,6 +120,6 @@ h3 {
 h5 {
     color: #AE2C80;
     font-family: 'Candal', sans-serif;
-    font-size: 1rem;
+    font-size: 1.125em;
     text-align: center;
 }
