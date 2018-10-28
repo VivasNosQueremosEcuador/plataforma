@@ -47,6 +47,7 @@ span, p {
 .uk-logo > img {
     margin: auto;
     max-width: 185px;
+    margin-right: 15px;
 }
 
 h1 {
