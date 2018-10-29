@@ -16,7 +16,7 @@
 <body>
 <div class="uk-offcanvas-content">
     <div class="uk-container">
-        <nav class="uk-navbar-container uk-margin uk-navbar-transparent" uk-navbar>
+        <nav class="uk-navbar-container uk-margin c uk-visible@m" uk-navbar>
             <div class="uk-navbar-left">
                 <a class="uk-logo" href="{{ SITEURL }}/">
                     <img src="{{ SITEURL }}/theme/css/images/logo-morado.png" alt="Vivas Nos Queremos">
@@ -25,7 +25,6 @@
                     <li><a href="{{ SITEURL }}/">Inicio</a></li>
                     <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
                     <li><a href="../pages/historias">Las que ya no están</a></li>
-                    <li hidden><a href="../pages/participa.html">Participa</a></li>
                     <li><a href="../category/noticias.html">Noticias</a></li>
                 </ul>
             </div>
@@ -42,22 +41,33 @@
             </div>
         </nav>
 
-        <a class="uk-hidden@m" uk-navbar-toggle-icon href="#my-id" uk-toggle></a>
+        <!--Inicio Menu para Mobile-->
+
+        <nav class="uk-hidden@m uk-navbar uk-navbar-container uk-margin uk-navbar-transparent">
+            <div class="uk-navbar-center">
+                <a class="uk-logo" href="{{ SITEURL }}/">
+                    <img class="uk-width-small" src="{{ SITEURL }}/theme/css/images/logo-morado.png" alt="Vivas Nos Queremos">
+                </a>
+                <a class="uk-navbar-toggle" href="#my-id" uk-toggle>
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+                </a>
+            </div>
+        </nav>
 
         <div id="my-id" uk-offcanvas>
             <div class="uk-offcanvas-bar">
-
                 <button class="uk-offcanvas-close" type="button" uk-close></button>
-                <ul class="uk-nav uk-nav-default">
+                <ul class="uk-nav">
                     <li><a href="{{ SITEURL }}/">Inicio</a></li>
                     <li><a href="../pages/acerca-de.html">Vivas Nos Queremos</a></li>
                     <li><a href="#">Las que ya no están</a></li>
                     <li hidden><a href="../pages/participa.html">Participa</a></li>
                     <li><a href="../category/noticias.html">Noticias</a></li>
-                    <li><a href="../category/eventos.html">Eventos</a></li>
                 </ul>
             </div>
         </div>
+
+        <!--Fin Menu para Mobile-->
 
 
         {% block content %}

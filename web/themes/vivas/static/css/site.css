@@ -40,6 +40,10 @@ span, p {
     color: #591848;
 }
 
+.uk-offcanvas > .uk-offcanvas-bar > ul > li > a {
+    font-family: 'Candal', sans-serif;
+}
+
 .uk-navbar-container {
     height: 140px;
 }
@@ -139,4 +143,8 @@ h5 {
     font-family: 'Candal', sans-serif;
     font-size: 1.125em;
     text-align: center;
+}
+
+.uk-open > .uk-offcanvas-bar {
+    background-color: #591848;
 }
