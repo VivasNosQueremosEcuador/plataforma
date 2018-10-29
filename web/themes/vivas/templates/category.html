@@ -14,7 +14,7 @@
         <h4>{{article.date.strftime("%d. %B %Y")}}</h4>
         <h3>{{article.title}}</h3>
         <h4>{{article.summary}}</h4>
-        <h5><a class="uk-link-reset" href="{{article.url}}">Leer más</a></h5>
+        <h5><a class="uk-link-reset" href="{{ SITEURL }}/{{article.url}}">Leer más</a></h5>
       </div>
     </div>
     {% endfor %}
