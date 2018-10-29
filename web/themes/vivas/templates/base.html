@@ -16,7 +16,7 @@
 <body>
 <div class="uk-offcanvas-content">
     <div class="uk-container">
-        <nav class="uk-navbar-container uk-margin c uk-visible@m" uk-navbar>
+        <nav class="uk-navbar-container uk-margin uk-navbar-transparent uk-visible@m" uk-navbar>
             <div class="uk-navbar-left">
                 <a class="uk-logo" href="{{ SITEURL }}/">
                     <img src="{{ SITEURL }}/theme/css/images/logo-morado.png" alt="Vivas Nos Queremos">
@@ -46,7 +46,8 @@
         <nav class="uk-hidden@m uk-navbar uk-navbar-container uk-margin uk-navbar-transparent">
             <div class="uk-navbar-center">
                 <a class="uk-logo" href="{{ SITEURL }}/">
-                    <img class="uk-width-small" src="{{ SITEURL }}/theme/css/images/logo-morado.png" alt="Vivas Nos Queremos">
+                    <img class="uk-width-small" src="{{ SITEURL }}/theme/css/images/logo-morado.png"
+                         alt="Vivas Nos Queremos">
                 </a>
                 <a class="uk-navbar-toggle" href="#my-id" uk-toggle>
                     <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
@@ -73,7 +74,7 @@
         {% block content %}
         {% endblock %}
 
-        <section id="redes-sociales">
+        <section id="redes-sociales" class="uk-visible@m">
             <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
                 <div class="uk-card uk-card-body">
                     <h3 class="uk-card-title">Facebook</h3>
@@ -109,6 +110,22 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="redes-sociales-reponsive" class="uk-hidden@m">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="https://twitter.com/Vivas_Ec" uk-icon="icon: twitter"></a></li>
+                        <li><a href="https://www.facebook.com/VivasNosQueremosEcuador" uk-icon="icon: facebook"></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/vivasnosqueremosecuador" uk-icon="icon: instagram"></a>
+                        </li>
+                        <li><a href="https://www.youtube.com/channel/UCblPhjppMQ_ezbT-sHYR9_g"
+                               uk-icon="icon: youtube"></a></li>
+                    </ul>
+                </div>
+            </nav>
         </section>
 
         <section id="footer">
