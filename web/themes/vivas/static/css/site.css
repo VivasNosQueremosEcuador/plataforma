@@ -33,6 +33,10 @@ span, p {
     font-size: 1em;
 }
 
+a:hover {
+    color: #000000;
+}
+
 .uk-card-body > .uk-link-reset {
     color: #AE2C80;
     font-family: 'Candal', sans-serif;
