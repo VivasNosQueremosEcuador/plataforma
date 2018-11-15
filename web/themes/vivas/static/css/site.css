@@ -22,6 +22,12 @@ h4 {
     font-family: Nanami-Light;
 }
 
+/*landing page*/
+.uk-section {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
 span, p {
     font-family: Nanami-Light;
     font-size: 1em;
@@ -45,7 +51,9 @@ span, p {
 }
 
 .uk-navbar-container {
-    height: 140px;
+    /*landing page*/
+    /*height: 140px;*/
+    height: 120px;
 }
 
 .uk-logo > img {
