@@ -6,9 +6,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map)
 
 //TODO: Calcular los image bounds
-//var imageUrl = '/theme/css/images/mapa_svg_continental_02.svg',
-//  imageBounds = [[-5.024173, -93.56487], [2.843487, -75.18251]];
-//L.imageOverlay(imageUrl, imageBounds).bringToFront().addTo(map);
+var ecuadorContinental = '/theme/css/images/mapa_svg_continental_02.svg',
+  imageBounds1 = [[1.560, -81.007], [-5.106, -75.190]];
+var mapaImg = L.imageOverlay(ecuadorContinental, imageBounds1).bringToFront().addTo(map);
+
+var galapagos = '/theme/css/images/mapa_svg_galapagos_02.svg',
+  imageBounds2 = [[0.732, -91.719], [-1.440, -89.18]];
+var galapagos = L.imageOverlay(galapagos, imageBounds2).bringToFront().addTo(map);
 
 const provincias = VIVAS.mapData.provincias
 
@@ -40,3 +44,5 @@ provincias.forEach(function (provincia) {
             //TODO('Agregar link a categories/provincias cuando se tengan más historias')
         }).addTo(map)
 })
+
+
