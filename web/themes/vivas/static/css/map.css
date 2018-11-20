@@ -9,7 +9,7 @@ div.marker-text {
 }
 
 .custom-icon {
-  background-image: url('/theme/css/images/location-pin-2x.png');
+  background-image: url('/theme/css/images/location-pin-2x-small-border.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 30px !important;
