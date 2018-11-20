@@ -38,5 +38,6 @@ RELATIVE_URLS = True
 # Custom variables for our project, they are accessible on the templates
 # under the VIVAS dictionary.
 VIVAS = {
-    'map_data': io.open('map_provincias_data.json', 'r', encoding='utf-8').read()
+    'map_data': io.open('map_provincias_data.json', 'r', encoding='utf-8').read(),
+    'total_pais': io.open('totalPais.json', 'r', encoding='utf-8').read()
 }
