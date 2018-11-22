@@ -22,11 +22,18 @@ h4 {
     font-family: Nanami-Light;
 }
 
-.texto-mapa {
+.texto-mapa-total {
   color: #AE2C80;
   font-family: 'Candal', sans-serif;
-  padding: 165px 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.total {
+  color: #AE2C80;
+  font-family: 'Candal', sans-serif;
   font-size: 30px;
+  text-align: center !important;
 }
 
 /*landing page*/

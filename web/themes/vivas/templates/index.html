@@ -23,16 +23,19 @@
 
 {% block content %}
 <section id="content">
-  <div class="uk-text-center" uk-grid>
-    <div class="uk-width-1-4">
-      <div class="texto-mapa">En Ecuador hay {{ VIVAS['total_pais'] }} feminicidios reportados. ¡No las olvidaremos!</div>
-    </div>
+  <div id="mapa" uk-grid>
     <div class="uk-width-3-4">
       <div id="map-wrapper" class="uk-visible@m uk-"></div>
     </div>
-  </div>
-  <div>
-    <img src="/theme/css/images/Fuentes.png">
+    <div class="uk-width-1-4">
+      <div class="texto-mapa-total"> En Ecuador hay </div>
+      <div class="total">{{ VIVAS['total_pais'] }}</div>
+      <div class="texto-mapa-total">feminicidios reportados. ¡No las olvidaremos!</div>
+      </br>
+      <div>
+        <h4>Nosotras, con nuestros aliados hemos recopilado la información de feminicidios por provincias desde el 2014.</h4>
+      </div>
+    </div>
   </div>
     <div id="map-modal" uk-modal>
         <div class="uk-modal-dialog uk-modal-body">
