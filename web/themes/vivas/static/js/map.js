@@ -23,7 +23,7 @@ provincias.forEach(function (provincia) {
         html: '<span>' + provincia.total + '</span>'
       })
     };
-    L.marker(provincia.coordenadas, markerOptions).bindTooltip('Click para más información de ' + provincia.provincia)
+    L.marker(provincia.coordenadas, markerOptions).bindTooltip('Feminicidios en ' + provincia.provincia)
         .on('click', function () {
             document.getElementById('modal-title').innerText = 'Provincia ' + provincia.provincia
             document.getElementById('modal-body').innerHTML = '<div class="uk-child-width-1-2@s uk-grid-match uk-text-center" uk-grid>' +
