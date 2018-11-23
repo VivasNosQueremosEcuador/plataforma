@@ -39,12 +39,35 @@ h4 {
     padding-top: 10px;
  }
 
- .fuentes {
+ .fuentes1 {
     display: block;
-    max-width: 100%;
-    max-height: 120px;
+    width: 115px;
+    height: 75px;
  }
 
+ .fuentes2 {
+    display: block;
+    width: 180px;
+    height: 70px;
+ }
+
+ .fuentes3 {
+    display: block;
+    width: 135px;
+    height: 70px;
+ }
+
+ .fuentes4 {
+    display: block;
+    width: 135px;
+    height: 70px;
+ }
+
+ .fuentes5 {
+    display: block;
+    width: 135px;
+    height: 70px;
+ }
 /*landing page*/
 .uk-section {
     padding-top: 10px;
