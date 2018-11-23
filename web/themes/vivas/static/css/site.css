@@ -23,20 +23,27 @@ h4 {
 }
 
 .texto-mapa-total {
-  color: #AE2C80;
-  font-family: 'Candal', sans-serif;
-  font-size: 20px;
-  text-align: center;
+    color: #AE2C80;
+    font-family: 'Candal', sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
 
 .total {
-  color: #AE2C80;
-  font-family: 'Candal', sans-serif;
-  font-size: 30px;
-  text-align: center !important;
+    color: #AE2C80;
+    font-family: 'Candal', sans-serif;
+    font-size: 30px;
+    text-align: center !important;
 }
  .espacio-superior {
-   padding-top: 80px;
+    padding-top: 80px;
+ }
+
+ .fuentes {
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
  }
 
 /*landing page*/
