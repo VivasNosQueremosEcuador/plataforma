@@ -9,19 +9,21 @@ div.marker-text {
 }
 
 .custom-icon {
-  background-image: url('/theme/css/images/location-pin.png');
-  background-size: 20px 20px;
+  background-image: url('/theme/css/images/location-pin-2x-small-border.png');
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 20px !important;
-  width: 20px !important;
+  height: 30px !important;
+  width: 24px !important;
+  margin-top: -15px !important;
+  margin-left: -12px !important;
 }
 
 .custom-icon span {
-  padding: 5px 0px 0px 7px;
-  position: absolute;
-  text-align: center;
-  font-size: 6.5px;
+  padding: 6px 0px 0px;
+  font-size: 10px;
   text-align: center;
   vertical-align: middle;
+  display: block;
+  width: 100%;
 }
 

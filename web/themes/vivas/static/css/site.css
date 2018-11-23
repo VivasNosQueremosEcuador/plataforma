@@ -22,6 +22,52 @@ h4 {
     font-family: Nanami-Light;
 }
 
+.texto-mapa-total {
+    color: #AE2C80;
+    font-family: 'Candal', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.total {
+    color: #AE2C80;
+    font-family: 'Candal', sans-serif;
+    font-size: 30px;
+    text-align: center !important;
+}
+ .espacio-superior {
+    padding-top: 10px;
+ }
+
+ .fuentes1 {
+    display: block;
+    width: 115px;
+    height: 75px;
+ }
+
+ .fuentes2 {
+    display: block;
+    width: 180px;
+    height: 70px;
+ }
+
+ .fuentes3 {
+    display: block;
+    width: 135px;
+    height: 70px;
+ }
+
+ .fuentes4 {
+    display: block;
+    width: 135px;
+    height: 70px;
+ }
+
+ .fuentes5 {
+    display: block;
+    width: 135px;
+    height: 70px;
+ }
 /*landing page*/
 .uk-section {
     padding-top: 10px;
@@ -173,4 +219,13 @@ h5 {
 
 .copyright {
     color: #AE2C80;
+}
+
+.hero-mobile-image {
+background-image: url("./images/hero-mobile-vivas.png");
+}
+
+#hero-mobile p {
+    font-family: 'Candal', sans-serif;
+    color: #FBD63F;
 }

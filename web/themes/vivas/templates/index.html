@@ -23,7 +23,30 @@
 
 {% block content %}
 <section id="content">
-    <div id="map-wrapper" class="uk-visible@m" hidden></div>
+  <div id="mapa" uk-grid class="uk-visible@m">
+    <div class="uk-width-3-4">
+      <div id="map-wrapper" class="uk-visible@m"></div>
+    </div>
+    <div class="uk-width-1-4">
+      <div class="total">{{ VIVAS['total_pais'] }}</div>
+      <div class="texto-mapa-total">mujeres fueron asesinadas en Ecuador en lo que va del año 2018.</div>
+      </br>
+      <div>
+        <h4>Estamos recopilando las historias de las mujeres que ya no están con nosotras. Próximamente las vamos a publicar.</h4>
+      </div>
+      <div class="uk-child-width-1-2" uk-grid>
+        <img class="fuentes1" src="/theme/css/images/logo_aliados1.jpg">
+        <img class="fuentes2" src="/theme/css/images/logo_aliados2.png">
+      </div>
+      <div class="uk-child-width-1-2" uk-grid>
+        <img class="fuentes3" src="/theme/css/images/logo_aliados3.png">
+        <img class="fuentes4" src="/theme/css/images/logo_aliados4.png">
+      </div>
+      <div class="uk-child-width-1-2" uk-grid>
+        <img class="fuentes5" src="/theme/css/images/logo_aliados5.jpg">
+      </div>
+    </div>
+  </div>
     <div id="map-modal" uk-modal hidden>
         <div class="uk-modal-dialog uk-modal-body">
             <h2 class="uk-modal-title" id="modal-title"></h2>
@@ -100,6 +123,21 @@
                    href="../category/noticias.html">
                     Ver más noticias
                 </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="hero-mobile" class=" uk-hidden@m">
+    <div class="uk-section">
+        <div class="uk-container">
+            <div class=" uk-padding-small">
+            <div class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle hero-mobile-image">
+                <div class=" uk-padding-small">
+                    <p>{{ VIVAS['total_pais'] }} mujeres fueron asesinadas en Ecuador en lo que va del año 2018.</p>
+                    <p>Estamos recopilando las historias de las mujeres que ya no están con nosotras. Próximamente las vamos a publicar.</p>
+                </div>
+            </div>
             </div>
         </div>
     </div>

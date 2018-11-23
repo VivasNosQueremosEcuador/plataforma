@@ -35,8 +35,18 @@ DEFAULT_PAGINATION = 9
 
 RELATIVE_URLS = True
 
+STATIC_PATHS = [
+    'images',
+    'extra',  # this
+]
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'}  # and this
+}
+
 # Custom variables for our project, they are accessible on the templates
 # under the VIVAS dictionary.
 VIVAS = {
-    'map_data': io.open('map_provincias_data.json', 'r', encoding='utf-8').read()
+    'map_data': io.open('map_provincias_data.json', 'r', encoding='utf-8').read(),
+    'total_pais': io.open('totalPais.json', 'r', encoding='utf-8').read()
 }
+
